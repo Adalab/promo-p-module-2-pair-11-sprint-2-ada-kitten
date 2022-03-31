@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="./css/main.css" />
     <title>AdaKitten</title>
   </head>
-
   <body>
     <header class="header">
       <section class="logo">
@@ -29,7 +28,7 @@
         <h1>AdaKitten</h1>
         <nav class="menu-nav">
           <ul class="menu">
-            <li class="item">
+            <li class="item js-button-new-form">
               <span class="fas fa-plus-circle"> </span>
             </li>
           </ul>
@@ -38,7 +37,7 @@
     </header>
 
     <main>
-      <section class="new-form collapsed">
+      <section class="new-form js-new-form collapsed">
         <h2 class="title">¿Agregamos un nuevo gatito a Adalab?</h2>
         <form class="form">
           <input
@@ -53,7 +52,7 @@
             placeholder="Nombre"
             required
           />
-          <input class="input js-input-breed" type="text" placeholder="Raza" />
+          <input class="input js-input-race" type="text" placeholder="Raza" />
           <input
             class="input js-input-desc"
             type="text"
@@ -87,60 +86,17 @@
             id="raza"
           />
 
-          <button class="button">Buscar</button>
+          <button class="button js-button-search">Buscar</button>
         </form>
       </section>
 
-      <section class="data">
-        <ul class="list js-list">
-          <!-- <li class="card">
-            <article> -->
-          <!-- <img
-                class="card_img"
-                src="https://ychef.files.bbci.co.uk/976x549/p07ryyyj.jpg"
-                alt="gatito"
-              /> -->
-          <!-- <h3 class="card_title">Anastacio</h3>
-              <h4 class="card_race">British Shorthair</h4>
-              <p class="card_description">
-                Ruiseño, juguetón, le gusta estar tranquilo y que nadie le
-                moleste. Es una maravilla acariciarle!
-              </p>
-            </article>
-          </li> -->
-
-          <!-- <li class="card">
-            <img
-              class="card_img"
-              src="https://images.emedicinehealth.com/images/article/main_image/cat-scratch-disease.jpg"
-              alt="gatito"
-            />
-            <h3 class="card_title">Fiona</h3>
-            <h4 class="card_race">British Shorthair</h4>
-            <p class="card_description">
-              Ruiseño, juguetón, le gusta estar tranquilo y que nadie le
-              moleste. Es una maravilla acariciarle!
-            </p>
-          </li> -->
-          <!-- <li class="card">
-            <img
-              class="card_img"
-              src="https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/newscms/2019_39/3021711/190923-cat-pet-stock-cs-1052a.jpg"
-              alt="gatito"
-            />
-            <h3 class="card_title">Cielo</h3>
-            <h4 class="card_race">British Shorthair</h4>
-            <p class="card_description">
-              Ruiseño, juguetón, le gusta estar tranquilo y que nadie le
-              moleste. Es una maravilla acariciarle!
-            </p>
-          </li> -->
-        </ul>
+      <section class="data js-data">
+        <ul class="list js-list"></ul>
       </section>
     </main>
     <footer class="footer">
       <h3 class="subtittle">&copy; Adalab 2022</h3>
     </footer>
-    <script src="./js/main.js" type="text/javascript"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
